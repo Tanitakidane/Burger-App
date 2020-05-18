@@ -5,7 +5,7 @@ var util = require('util');
   
 
 
-var pool = mysql.createPool({
+let pool = mysql.createPool({
     connectionLimit : 20,
     connectTimeout  : 60 * 60 * 1000,
     acquireTimeout   : 60 * 60 * 1000,
