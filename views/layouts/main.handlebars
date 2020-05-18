@@ -1,0 +1,111 @@
+
+<html>
+    <head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+
+<style>
+    body{
+        background-color: darkkhaki;
+    },
+
+
+    .row2 {
+  display: flex;
+  align-items: center;
+  
+}
+</style>
+
+    </head>
+
+<body>
+
+<div class="container">
+
+<div class="row" >
+    
+    <div class="col-md-4" style="margin-top: 90px;">
+
+  
+  {{#each burgers}}
+
+
+ 
+<div class="row2">
+  <form method="post" action="/devour">
+  
+  <textarea rows="1" cols="20" disabled>
+{{this.burgername}}
+</textarea>
+
+    <input type="hidden" name="id" value="{{this.id}}">
+ <button type="submit" >Devour</button>
+  
+  </form>
+
+</div>
+
+
+    
+  {{/each}}
+
+
+    </div>
+
+
+<div class="col-md-4 offset-md-1" style="margin-top: 50px; text-align: center;">
+
+    <div class="form-group">
+
+        <img src="https://cdn3.vectorstock.com/i/1000x1000/58/57/burger-cartoon-vector-895857.jpg" width="150px" height="150px"><br>
+ <h4>Eat Da Burger !!</h4><br>
+ <form method="post" action="/data">
+       <textarea class="form-control" rows="5" name="burger" id="comment"></textarea><br>
+   
+<button type="submit"  class="btn btn-primary btn-xs">
+        Submit Data
+      </button>
+
+ </form>
+
+   <label>Enter the Burger You want to eat ,Click the "Submit" Button</label>
+</div>
+   
+
+</div>
+
+<div class="col-md-3" style="margin-top: 40px;">
+
+ {{#each devour}}
+
+
+ 
+<div class="row2">
+ <input type="text" class="form-control" value="{{this.burgername}}" disabled><br>
+</div>
+
+
+    
+  {{/each}}
+  
+   
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+</body>
+
+
+
+</html>
+
+
