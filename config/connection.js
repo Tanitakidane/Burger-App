@@ -10,10 +10,10 @@ var pool = mysql.createPool({
     connectTimeout  : 60 * 60 * 1000,
     acquireTimeout   : 60 * 60 * 1000,
     timeout         : 60 * 60 * 1000,
-    host: "qn66usrj1lwdk1cc.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    user: "xagml685sgf7faaz",
-    password: "yiuerj1w1wf0pou5",
-    database : "qbz2qk4chwieh54w",
+    host: "i2cpbxbi4neiupid.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    user: "ixaikiwnox3d5l3d",
+    password: "frho4fhq7hzcg59p",
+    database : "h5yfkr5ixjcgtlrn",
 })
 
 
